@@ -3,11 +3,7 @@
     <div class="cover-inner">
       <div class="cover-contents">
         <h1>素敵なモノと出会う場所</h1>
-        <div class="buttons text-center">
-          <% if logged_in? %>
-            <%= render 'ownerships/want_button', item: item %>
-          <% end %>
-        </div>
+        <div class="buttons text-center"></div>
           <% unless logged_in? %>
             <%= link_to 'モノリストを始める', signup_path, class: 'btn btn-success btn-lg' %>
           <% end %>
